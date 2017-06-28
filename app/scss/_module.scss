@@ -1,0 +1,450 @@
+body {
+	font-family: $font-family-sans-serif !important;
+	font-size: $font-size-base;
+	color: $text-color;
+	font-weight: normal;
+	overflow-x: hidden !important;
+	line-height: $line-height-base;
+	background: $dirt-white;
+}
+* {
+	box-sizing: border-box;
+	&:before, &:after {
+		box-sizing: border-box;
+	}
+}
+
+.full-width {
+	width: 100%;
+	margin: auto;
+}
+
+
+/*---------------------------------------
+ **	 COLORS -----
+-----------------------------------------*/
+
+/** BACKGROUNDS **/
+
+.red-bg {
+	background: $red;
+}
+
+.green-bg {
+	background: $green-base;
+}
+
+.blue-bg {
+	background: $blue-dark;
+}
+
+.dark-bg {
+	background: $gray-dark;
+}
+
+.white-bg {
+	background: $white;
+}
+
+/** FOR TEXTS AND ICON FONTS **/
+
+.red-text {
+	color: $red;
+}
+
+.green-text {
+	color: $green-base;
+}
+
+.blue-text {
+	color: $blue-dark;
+}
+
+
+.dark-text {
+	color: $gray-dark;
+}
+
+.white-text {
+	color: $white;
+}
+
+/*---------------------------------------
+ **	 BORDER BOTTOMS -----
+-----------------------------------------*/
+
+.white-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 50%;
+	height: 2px;
+	background: $dirt-white;
+	bottom: -9px;
+	left: 25%;
+}
+
+.dark-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 50%;
+	height: 2px;
+	background: $gray-dark;
+	bottom: -9px;
+	left: 25%;
+}
+
+.red-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: $red;
+	bottom: -9px;
+	left: 12.5%;
+}
+
+.green-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: $green-base;
+	bottom: -9px;
+	left: 12.5%;
+}
+
+.blue-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: $blue-dark;
+	bottom: -9px;
+	left: 12.5%;
+}
+
+.yellow-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: $yellow;
+	bottom: -9px;
+	left: 12.5%;
+}
+ 
+.section-header {
+	text-align: center;
+	padding-bottom: 75px;
+	h2 {
+		padding-bottom: 10px;
+		line-height: 40px;
+		position: relative;
+		display: inline-block;
+	}
+	h6 {
+		font-size: 1rem;
+	}
+}
+
+
+
+.header {
+	overflow: hidden;
+	position:relative;
+	@include media-breakpoint-up(sm) {
+		min-height: 875px;
+	}
+	#header-bar{
+		height:10px; 
+		background:$orange;
+	}
+}
+ 
+ 
+.intro {
+	text-align: center;
+	color: $gray-base;
+	margin-bottom: 10px;
+	line-height: 65px;
+	z-index: 0;
+	font-size: 32px;
+	font-weight: 800;
+}
+
+/* Short Messages */
+
+.bottom-message-section {
+	margin-top: 14%;
+	position: relative;
+}
+
+.short-text {
+	margin: auto;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.7);
+	text-transform: uppercase;
+}
+.text-intro{
+	font-size: 1.5rem; 
+	letter-spacing: 0.8px;
+	margin-bottom: 58px;
+}
+
+/*---------------------------------------
+ **	 SECTION:	DONATION -----
+-----------------------------------------*/
+
+#donation{
+	.intro{
+		margin-top: 5%;
+	}
+
+	.box{
+		background:$white; 
+		padding: 40px 15px 35px 15px; 
+		margin-bottom: 50px; 
+		min-height: 510px; 
+		position:relative;
+		width: 100%;
+
+
+ 
+		@include media-breakpoint-up(md) {
+			max-width: 768px;
+			padding: 40px 180px 35px 32px; 
+		}
+
+		.tt{
+			font-size:26px; 
+			font-weight: 400; 
+			margin-bottom: 35px;
+			color: $green-dark;
+		}
+
+		.form-group{
+			.control-label{
+				font-weight: 300;
+				width: 60%;
+			} 
+			label{
+				font-weight: 300;
+			}
+		}
+	}
+	.form-control{
+		border-radius: 0;
+		cursor: pointer;
+		border:2px solid $gray-base;
+		padding: 5px 1.25rem;
+		margin: 0 1.25rem;
+		height: 46px;
+	}
+	.i-want-to-donate{
+		margin-top: 3.4375rem; 
+		margin-bottom: 1.875rem;
+		label{
+			margin-bottom: 1.25rem;
+		}
+		.buttons{
+			margin-top: 10px; 
+			margin-bottom: 25px;
+		}
+		.form-control{
+			padding-left: 1.875rem;
+			background: $white url(../images/gbp-icon.png) no-repeat left center;
+		}
+	}
+	.donation-value{
+		margin-bottom: 15px;
+		.btn-group{
+			display: inline-block; 
+			vertical-align: top;
+			.btn{
+				border-radius: 0;
+				vertical-align: baseline;
+				font-size:1.35em; 
+				font-weight:600; 
+				border: 2px solid $gray-base; 
+				background: $white; 
+				width: 65px;
+				padding: 8px 0;
+				margin-right: 10px;
+				font-weight: 300;
+				&:last-child{
+					margin-right: 0;
+				}
+				&.active{
+					background: $green-base;
+					border-color: $green-base;
+					color: $white;
+					box-shadow: 0 0 0 transparent;
+				}
+			}
+		}
+		label{
+			display: inline-block; 
+			padding: 0 15px;
+			vertical-align: inherit;
+		}
+		.form-control{
+			font-size:1.35em; 
+			border:2px solid $gray-base; 
+			max-width: 180px; 
+			display: inline-block;
+		}
+	}
+	.donate-btn{
+		padding: 13px 45px; 
+		border-bottom-width: 8px;
+	}
+	#animal-holder{
+		top:0; 
+		right: 0; 
+		bottom: 0; 
+		width: 180px; 
+		background: no-repeat top center;
+		background-size: cover;
+		position:relative;
+
+		@include media-breakpoint-up(md) {
+			top:0; 
+			right: 0; 
+			bottom: 0; 
+			width: 180px; 
+			background: no-repeat top center;
+			background-size: cover;
+			position:absolute;
+		}
+
+
+
+
+
+		&.giraffe{
+			background-image: url(../images/giraffe.png);
+		}
+		&.tiger{
+			background-image: url(../images/tiger.png);
+		}
+		&.rhino{
+			background-image: url(../images/rhino.png);
+		}
+	}
+}
+
+/*---------------------------------------
+ **	 SECTION:	WHAT WE DO -----
+-----------------------------------------*/
+
+.what-we-do {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	overflow: hidden;
+	background: $white;
+
+	.container{
+		@include media-breakpoint-up(lg) {
+			width: 1212px;
+		}
+	}
+
+	.what-we-do-holder p{
+		font-size:1rem;
+	}
+	.button-holder{
+		margin: 1.25rem 0;
+		.btn{
+			margin-right: 5px; 
+		}
+	}
+}
+
+/* ON HOVER COLORED ROUNDED CIRCLE AROUND ICONS */
+
+.red, .green, .blue, .yellow {
+	transition: all 350ms ease;
+}
+
+.red:hover .service-icon {
+	border: 10px solid $red;
+}
+
+.green:hover .service-icon {
+	border: 10px solid $green-base;
+}
+
+.blue:hover .service-icon {
+	border: 10px solid $blue-dark;
+}
+
+.yellow:hover .service-icon {
+	border: 10px solid $yellow;
+}
+
+
+/* ----------------------------------------*/
+/*	 SECTION:	FOOTER */
+/* ----------------------------------------*/
+
+footer {
+	padding-top: 1.875rem;
+	padding-bottom: 10px;
+	background: $gray-base;
+	color: $white;
+	.container{
+		@include media-breakpoint-up(lg) {
+			width: 1212px;
+		}
+	}
+	h4{
+		width: 100%;
+		font-weight: 800;
+		font-size: .9em;
+		margin-bottom: 1.875rem;
+	}
+	a{
+		color: $white;
+		&:hover{
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+	li{
+		margin-bottom: 2px;
+		font-weight: 300;
+	}
+	 
+	.icon-holder{
+		a{
+			display: inline-block;
+			margin-right: 10px;
+			transition: all 350ms ease;
+			&:hover{
+				opacity:0.5;
+			}
+		}
+	}
+	.logo-footer{
+		img{
+			margin-bottom: 1.25rem;
+		}
+		p{
+			width: 100%;
+			padding-left: 105px;
+			line-height: 2;
+		}
+	}
+}

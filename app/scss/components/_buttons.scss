@@ -1,0 +1,68 @@
+
+/*---------------------------------------
+ **	 BUTTONS -----
+-----------------------------------------*/
+button, a, input{
+	border-radius: 0;
+	&.btn{
+		border-radius: 0;
+		font-weight: 300;
+    font-size: 0.875rem;
+	}
+	
+}
+.red-btn, 
+.green-btn, 
+.blue-btn, 
+.orange-btn,
+.gray-btn{
+	color: $white;
+	font-weight:600;
+	border-color: transparent;
+	border-bottom: 2px solid $black;
+	transition: all 350ms ease;
+}
+
+.red-btn {
+	background: $red;
+	border-bottom-color: darken($red,5%);
+	&:hover,&:focus{
+		color: $white;
+		background: darken($red,5%);
+	}
+}
+
+.green-btn {
+	background: $green-base;
+	border-bottom-color: darken($green-dark,0%);
+	&:hover,&:focus{
+		color: $white;
+		background: darken($green-dark,5%);
+	}
+}
+
+.blue-btn {
+	background: $blue-dark;
+	border-bottom-color: darken($blue-dark,15%);
+	&:hover,&:focus{
+		color: $white;
+		background: darken($blue-dark,15%);
+	}
+}
+
+.orange-btn {
+	background: $orange;
+	border-bottom-color: darken($orange,15%);
+	&:hover,&:focus{
+		color: $white;
+		background: darken($orange,15%);
+	}
+}
+.gray-btn {
+	background: $gray-base;
+	border-bottom-color: darken($gray-base,15%);
+	&:hover,&:focus{
+		color: $white;
+		background: darken($gray-base,15%);
+	}
+}

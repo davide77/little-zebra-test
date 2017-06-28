@@ -1,0 +1,71 @@
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 3.4375rem;
+}
+
+h2 {
+	font-size: 45px;
+	line-height: 3.4375rem;
+}
+
+h3 {
+	font-size: 1.5rem; 
+	letter-spacing: 0.8px;
+	margin-bottom: 58px;
+}
+
+h4 {
+	font-size: 1.125rem;
+}
+
+h5 {
+	font-size: 1.0625rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+
+label{
+	font-weight:600; 
+	font-size: 1rem;
+}
+
+i {
+	vertical-align: middle;
+}
+
+ul, ol {
+	padding-left: 0 !important;
+}
+
+li {
+	list-style: none;
+}
+
+::-moz-selection, ::selection, ::-moz-selection, ::-webkit-selection {
+	background: $orange;
+	color: $white;
+}
+
+a {
+	color: $link-color;
+	transition: color 350ms ease;
+	&:hover {
+		text-decoration: none;
+		color: $link-hover-color;
+	}
+}
+
+p {
+	line-height: $line-height-base;
+	margin-bottom: 15px;
+}
