@@ -56,66 +56,79 @@
 
 			<h1 class="intro">DONATE TODAY</h1>
 			<h3 class="text-center text-intro">Help protecting the planet today, become a Little Zebra ambassador</h3>
+			
 			<div class="row d-flex justify-content-center">
 
 
-						<div class="box">
-							<h2 class="text-center tt">MAKE A DONATION</h2>
-							<form method="get" action="" id="form-donation">
-								<div class="form-horizontal">
-									<div class="form-group d-flex">
+						<div class="box row">
+							
 
-										<label class="control-label" for="animal">I want to help</label>
+							<form method="get" action="" id="form-donation" class="col-12 col-sm-9 col-md-9 col-lg-9">
+								<div class="px-3 mx-3">
+									<h2 class="text-center">MAKE A DONATION</h2>
+									
+									<div class="form-horizontal">
+										<div class="form-group d-flex">
 
-											<select class="form-control input-lg" id="animal" name="animal">
-												<option value="giraffe">a giraffe</option>
-												<option value="tiger">a tiger</option>
-												<option value="rhino">a rhino</option>
-											</select>
+											<label class="control-label" for="animal">I want to help</label>
 
-									</div>
-								</div>
-
-								<div class="form-group i-want-to-donate d-flex flex-wrap flex-sm-wrap justify-content-center justify-content-md-start">
-
-									<label>I want to donate:</label>
-
-									<div class="donation-value d-sm-flex justify-content-center">
-
-										<div class="btn-group d-flex justify-content-center justify-content-sm-start" data-toggle="buttons">
-											<label class="btn btn-lg">
-												<input type="radio" value="3" autocomplete="off">
-												£3
-											</label>
-											<label class="btn btn-lg">
-												<input type="radio" value="5" autocomplete="off"> 
-												£5
-											</label>
-											<label class="btn btn-lg">
-												<input type="radio" value="10" autocomplete="off"> 
-												£10
-											</label>
-										</div>
-
-										<div class="result d-flex justify-content-center justify-content-sm-start">
-
-											<label for="donation_value">or</label>
-											<input class="form-control input-lg" id="donation_value" type="number" name="donation_value" min="11" max="999999999" step="1" required oninvalid="this.setCustomValidity('Please, select a value on the left, or type a donation value greater than &pound;11! Thanks!')">
+												<select class="form-control input-lg" id="animal" name="animal">
+													<option value="giraffe">a giraffe</option>
+													<option value="tiger">a tiger</option>
+													<option value="rhino">a rhino</option>
+												</select>
 
 										</div>
 									</div>
 
-									<span class="lz-checkbox d-flex justify-content-center justify-content-sm-start">
-										<input type="checkbox" id="monthly" name="monthly" value="yes">
-										<label for="monthly">I want to do a monthly donation</label>
-									</span>
+									<div class="form-group i-want-to-donate d-flex flex-wrap flex-sm-wrap justify-content-center justify-content-md-start">
 
+										<label>I want to donate:</label>
+
+										<div class="donation-value d-sm-flex justify-content-center">
+
+											<div class="btn-group d-flex justify-content-center justify-content-sm-start" data-toggle="buttons">
+												<label class="btn btn-lg">
+													<input type="radio" value="3" autocomplete="off">
+													£3
+												</label>
+												<label class="btn btn-lg">
+													<input type="radio" value="5" autocomplete="off"> 
+													£5
+												</label>
+												<label class="btn btn-lg">
+													<input type="radio" value="10" autocomplete="off"> 
+													£10
+												</label>
+											</div>
+
+											<div class="result d-flex justify-content-center justify-content-sm-start">
+
+												<label for="donation_value">or</label>
+												<input class="form-control input-lg" id="donation_value" type="number" name="donation_value" min="11" max="999999999" step="1" required oninvalid="this.setCustomValidity('Please, select a value on the left, or type a donation value greater than &pound;11! Thanks!')">
+
+											</div>
+										</div>
+
+										<span class="lz-checkbox d-flex justify-content-center justify-content-sm-start">
+											<input type="checkbox" id="monthly" name="monthly" value="yes">
+											<label for="monthly">I want to do a monthly donation</label>
+										</span>
+
+									</div>
+									<div class="mb-3 text-center">
+										<button class="btn btn-lg green-btn donate-btn" type="submit">DONATE NOW</button>
+									</div>
 								</div>
-								<div class="text-center">
-									<button class="btn btn-lg green-btn donate-btn" type="submit">DONATE NOW</button>
+							</form>
+
+							<div class="hidden-xs-down col-sm-3 col-md-3 col-lg-3">
+								<div class="row">
+									<div id="animal-holder"></div>
 								</div>
-							</form>	
-							<div id="animal-holder"></div>
+							</div>
+
+
 						</div>
 
 
@@ -205,7 +218,7 @@
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 

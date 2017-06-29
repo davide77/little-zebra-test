@@ -31,7 +31,7 @@
 
      $(window).resize();
 
-   }
+   },
    donationForm: function() {
      var $animal = $('#animal');
      var $animal_holder = $('#animal-holder');
