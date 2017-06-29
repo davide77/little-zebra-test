@@ -152,8 +152,6 @@ body {
 		height: 100%;
 		min-height: 510px; 
 
-
- 
 		@include media-breakpoint-up(md) {
 			max-width: 768px;
 			padding: 0 0 0 0; 
@@ -177,14 +175,7 @@ body {
 			}
 		}
 	}
-	.form-control{
-		border-radius: 0;
-		cursor: pointer;
-		border:2px solid $gray-base;
-		padding: 5px 1.25rem;
-		margin: 0 1.25rem;
-		height: 46px;
-	}
+
 	.i-want-to-donate{
 		margin-top: 3.4375rem; 
 		margin-bottom: 1.875rem;
@@ -196,12 +187,19 @@ body {
 			margin-bottom: 25px;
 		}
 		.form-control{
+			height: 52px;
+			width: 100%;
+			border-radius: 0;
 			padding-left: 1.875rem;
 			background: $white url(../images/gbp-icon.png) no-repeat left center;
 		}
 	}
 	.donation-value{
 		margin-bottom: 15px;
+		width: 100%;
+		.result{
+			width: 100%;
+		}
 		.btn-group{
 			display: inline-block; 
 			vertical-align: top;
@@ -213,7 +211,7 @@ body {
 				border: 2px solid $gray-base; 
 				background: $white; 
 				width: 65px;
-				padding: 8px 0;
+				padding: 11px 0;
 				margin-right: 10px;
 				font-weight: 300;
 				&:last-child{
@@ -233,9 +231,10 @@ body {
 			vertical-align: inherit;
 		}
 		.form-control{
+			border-radius: 0;
 			font-size:1.35em; 
 			border:2px solid $gray-base; 
-			max-width: 180px; 
+			max-width: 100%;
 			display: inline-block;
 		}
 	}
@@ -249,24 +248,22 @@ body {
 		position:relative;
 		width: 100%;
 		height: 100%;
-		min-height: 510px; 
+		min-height: 510px;
+		transition: background-image 350ms ease;
+		
 		@include media-breakpoint-up(md) {
 			background: no-repeat top center;
 			background-size: cover;
 		}
 
-
-
-
-
 		&.giraffe{
-			background-image: url(../images/giraffe.png);
+			background-image: url(../images/donation-giraffe.jpg);
 		}
 		&.tiger{
-			background-image: url(../images/tiger.jpg);
+			background-image: url(../images/donation-tiger.jpg);
 		}
 		&.rhino{
-			background-image: url(../images/rhino.jpg);
+			background-image: url(../images/donation-rhino.jpg);
 		}
 	}
 }

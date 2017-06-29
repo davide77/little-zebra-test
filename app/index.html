@@ -59,20 +59,18 @@
 			
 			<div class="row d-flex justify-content-center">
 
-
 						<div class="box row">
 							
-
 							<form method="get" action="" id="form-donation" class="col-12 col-sm-9 col-md-9 col-lg-9">
 								<div class="px-3 mx-3">
 									<h2 class="text-center">MAKE A DONATION</h2>
 									
 									<div class="form-horizontal">
-										<div class="form-group d-flex">
+										<div class="form-group d-flex align-items-baseline">
 
 											<label class="control-label" for="animal">I want to help</label>
-
-												<select class="form-control input-lg" id="animal" name="animal">
+											
+												<select class="custom-select" id="animal" name="animal">
 													<option value="giraffe">a giraffe</option>
 													<option value="tiger">a tiger</option>
 													<option value="rhino">a rhino</option>
@@ -85,7 +83,7 @@
 
 										<label>I want to donate:</label>
 
-										<div class="donation-value d-sm-flex justify-content-center">
+										<div class="donation-value d-sm-flex justify-content-center justify-content-sm-start">
 
 											<div class="btn-group d-flex justify-content-center justify-content-sm-start" data-toggle="buttons">
 												<label class="btn btn-lg">
@@ -102,10 +100,10 @@
 												</label>
 											</div>
 
-											<div class="result d-flex justify-content-center justify-content-sm-start">
+											<div class="result d-flex justify-content-center justify-content-sm-start align-items-baseline">
 
 												<label for="donation_value">or</label>
-												<input class="form-control input-lg" id="donation_value" type="number" name="donation_value" min="11" max="999999999" step="1" required oninvalid="this.setCustomValidity('Please, select a value on the left, or type a donation value greater than &pound;11! Thanks!')">
+												<input class="form-control" id="donation_value" type="number" name="donation_value" min="11" max="999999999" step="1" required oninvalid="this.setCustomValidity('Please, select a value on the left, or type a donation value greater than &pound;11! Thanks!')">
 
 											</div>
 										</div>

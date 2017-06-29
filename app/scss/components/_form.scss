@@ -1,7 +1,21 @@
-$margin-el: 7px; // default margin for our custom inputs
-/**
- * Checkboxes & radios
- */
+//SELECT
+
+.custom-select {
+  background: url(/images/chevron.svg) no-repeat 97% 46%;
+	border-radius: 0;
+	cursor: pointer;
+	border:2px solid $gray-base;
+	padding: 5px 1.25rem;
+	margin:0 0 0 1.25rem;
+	height: 52px;
+	width: 100%;
+}
+
+
+
+
+//CHECKBOX
+
 .lz-checkbox > [type="checkbox"],
 .lz-radio > [type="radio"] {
     &:checked,
@@ -18,7 +32,7 @@ $margin-el: 7px; // default margin for our custom inputs
             padding-left: 30px;
             padding-top: 2px;
             cursor: pointer;
-			position:relative;
+						position:relative;
             &:before {
                 // position elements absolute to parent container
                 position: absolute;
