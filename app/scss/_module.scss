@@ -73,77 +73,8 @@ body {
  **	 BORDER BOTTOMS -----
 -----------------------------------------*/
 
-.white-border-bottom:before {
-	position: absolute;
-	margin: auto;
-	z-index: 1;
-	content: "";
-	width: 50%;
-	height: 2px;
-	background: $dirt-white;
-	bottom: -9px;
-	left: 25%;
-}
 
-.dark-border-bottom:before {
-	position: absolute;
-	margin: auto;
-	z-index: 1;
-	content: "";
-	width: 50%;
-	height: 2px;
-	background: $gray-dark;
-	bottom: -9px;
-	left: 25%;
-}
 
-.red-border-bottom:before {
-	position: absolute;
-	margin: auto;
-	z-index: 1;
-	content: "";
-	width: 75%;
-	height: 2px;
-	background: $red;
-	bottom: -9px;
-	left: 12.5%;
-}
-
-.green-border-bottom:before {
-	position: absolute;
-	margin: auto;
-	z-index: 1;
-	content: "";
-	width: 75%;
-	height: 2px;
-	background: $green-base;
-	bottom: -9px;
-	left: 12.5%;
-}
-
-.blue-border-bottom:before {
-	position: absolute;
-	margin: auto;
-	z-index: 1;
-	content: "";
-	width: 75%;
-	height: 2px;
-	background: $blue-dark;
-	bottom: -9px;
-	left: 12.5%;
-}
-
-.yellow-border-bottom:before {
-	position: absolute;
-	margin: auto;
-	z-index: 1;
-	content: "";
-	width: 75%;
-	height: 2px;
-	background: $yellow;
-	bottom: -9px;
-	left: 12.5%;
-}
  
 .section-header {
 	text-align: center;
