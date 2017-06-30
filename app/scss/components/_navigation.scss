@@ -3,6 +3,8 @@
 	z-index: 1000;
 	min-height: 75px;
 	position:absolute;
+	transition: border-bottom 350ms ease;
+	border-bottom:1px solid transparent;
 	&.fixed {
 		position: fixed !important;
 		top: 0;

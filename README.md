@@ -23,7 +23,3 @@ After the install, on your terminal or gitbush, run the following command:
 ```
 gulp
 ```
-
-## license
-
-MIT. Copyright (c)

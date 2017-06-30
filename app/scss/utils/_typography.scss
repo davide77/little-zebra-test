@@ -5,15 +5,27 @@ h1, h2, h3, h4, h5, h6 {
 	font: inherit;
 	vertical-align: baseline;
 	font-weight: 300;
+	color: $gray-base;
+	&.green{
+		color: $green-base;
+	}
+	&.white{
+		color: #fff;
+	}
 }
 
 h1 {
-	font-size: 3.4375rem;
+	font-weight: 700;
+	line-height: 4rem;
+	font-size: 2.125rem;
+	margin-top: 2.0625rem;//33px
+	margin-bottom: 1.25rem;//10px;
 }
 
 h2 {
-	font-size: 45px;
+	font-size:1.625rem; 
 	line-height: 3.4375rem;
+
 }
 
 h3 {
