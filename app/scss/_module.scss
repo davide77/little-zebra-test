@@ -1,5 +1,5 @@
 body {
-	font-family: $font-family-sans-serif !important;
+	font-family: 'Open Sans', sans-serif;
 	font-size: $font-size-base;
 	color: $text-color;
 	font-weight: normal;
@@ -13,69 +13,6 @@ body {
 		box-sizing: border-box;
 	}
 }
-
-.full-width {
-	width: 100%;
-	margin: auto;
-}
-
-
-/*---------------------------------------
- **	 COLORS -----
------------------------------------------*/
-
-/** BACKGROUNDS **/
-
-.red-bg {
-	background: $red;
-}
-
-.green-bg {
-	background: $green-base;
-}
-
-.blue-bg {
-	background: $blue-dark;
-}
-
-.dark-bg {
-	background: $gray-dark;
-}
-
-.white-bg {
-	background: $white;
-}
-
-/** FOR TEXTS AND ICON FONTS **/
-
-.red-text {
-	color: $red;
-}
-
-.green-text {
-	color: $green-base;
-}
-
-.blue-text {
-	color: $blue-dark;
-}
-
-
-.dark-text {
-	color: $gray-dark;
-}
-
-.white-text {
-	color: $white;
-}
-
-/*---------------------------------------
- **	 BORDER BOTTOMS -----
------------------------------------------*/
-
-
-
- 
 .section-header {
 	text-align: center;
 	padding-bottom: 75px;
@@ -88,9 +25,7 @@ body {
 	h6 {
 		font-size: 1rem;
 	}
-}
-
-
+} 
 
 .header {
 	overflow: hidden;
@@ -134,9 +69,8 @@ body {
 	margin-bottom: 58px;
 }
 
-/*---------------------------------------
- **	 SECTION:	DONATION -----
------------------------------------------*/
+
+//SECTION:	DONATION
 
 #donation{
 	.intro{
@@ -191,7 +125,7 @@ body {
 			width: 100%;
 			border-radius: 0;
 			padding-left: 1.875rem;
-			background: $white url(../images/gbp-icon.png) no-repeat left center;
+			background: $white url(../images/gbp-icon.png) no-repeat 12px center;
 		}
 	}
 	.donation-value{
@@ -250,7 +184,7 @@ body {
 		height: 100%;
 		min-height: 510px;
 		transition: background-image 350ms ease;
-		
+
 		@include media-breakpoint-up(md) {
 			background: no-repeat top center;
 			background-size: cover;
@@ -268,9 +202,8 @@ body {
 	}
 }
 
-/*---------------------------------------
- **	 SECTION:	WHAT WE DO -----
------------------------------------------*/
+
+//SECTION:	WHAT WE DO
 
 .what-we-do {
 	padding-top: 40px;

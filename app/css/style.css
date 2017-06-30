@@ -6045,7 +6045,7 @@ p {
   margin-bottom: 15px; }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   color: #474d55;
   font-weight: normal;
@@ -6058,48 +6058,6 @@ body {
   *:before, *:after {
     box-sizing: border-box; }
 
-.full-width {
-  width: 100%;
-  margin: auto; }
-
-/*---------------------------------------
- **	 COLORS -----
------------------------------------------*/
-/** BACKGROUNDS **/
-.red-bg {
-  background: #d9534f; }
-
-.green-bg {
-  background: #74d24a; }
-
-.blue-bg {
-  background: blue; }
-
-.dark-bg {
-  background: #292b2c; }
-
-.white-bg {
-  background: #fff; }
-
-/** FOR TEXTS AND ICON FONTS **/
-.red-text {
-  color: #d9534f; }
-
-.green-text {
-  color: #74d24a; }
-
-.blue-text {
-  color: blue; }
-
-.dark-text {
-  color: #292b2c; }
-
-.white-text {
-  color: #fff; }
-
-/*---------------------------------------
- **	 BORDER BOTTOMS -----
------------------------------------------*/
 .section-header {
   text-align: center;
   padding-bottom: 75px; }
@@ -6146,9 +6104,6 @@ body {
   letter-spacing: 0.8px;
   margin-bottom: 58px; }
 
-/*---------------------------------------
- **	 SECTION:	DONATION -----
------------------------------------------*/
 #donation .intro {
   margin-top: 5%; }
 
@@ -6189,7 +6144,7 @@ body {
     width: 100%;
     border-radius: 0;
     padding-left: 1.875rem;
-    background: #fff url(../images/gbp-icon.png) no-repeat left center; }
+    background: #fff url(../images/gbp-icon.png) no-repeat 12px center; }
 
 #donation .donation-value {
   margin-bottom: 15px;
@@ -6251,9 +6206,6 @@ body {
   #donation #animal-holder.rhino {
     background-image: url(../images/donation-rhino.jpg); }
 
-/*---------------------------------------
- **	 SECTION:	WHAT WE DO -----
------------------------------------------*/
 .what-we-do {
   padding-top: 40px;
   padding-bottom: 40px;
